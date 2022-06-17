@@ -42,3 +42,27 @@ You'll need to previously install the following packages:
 ```
 pip install PyQt5
 ```
+```
+pip install scipy
+```
+```
+pip install mealpy==2.1.2
+```
+```
+pip install memory-profiler
+```
+```
+pip install psutil
+```
+```
+pip install matplotlib
+```
+```
+pip install mplcursors
+```
+```
+pip install scikit-rf
+```
+```
+pip install multiprocessing
+```
