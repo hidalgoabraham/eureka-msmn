@@ -11,8 +11,8 @@ This is a tool to automatic design Multiple-Stub Matching Networks (MSMN) for wi
 App's logo:
 
 ![App Screenshot](./logo_eureka_msmn.png)
-
-
+<br />
+<br />
 
 
 Main window: Configure the transmission line system and select the heuristic algorithms
