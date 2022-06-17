@@ -37,7 +37,7 @@ Results: ROEV (Voltage Standing Wave Ratio) vs. frequency - A wideband impedance
 For Windows OS, you can run the Eureka MSMN.exe file included in the package folder available on: https://drive.google.com/file/d/1QnXycnOk792U68OeCCPjIsB6TgkOxBgr/view?usp=sharing.
 
 Also, you can download this repository an run the Eureka.py file.
-You'll need to previously install the following packages:
+You'll need to previously install the following packages (e.g. via pip):
 
 ```
 pip install PyQt5
