@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>321</width>
+    <height>164</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>321</width>
+    <height>164</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>321</width>
+    <height>164</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>¡Error!</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>warning.png</normaloff>warning.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-color: rgb(49, 58, 67);</string>
+  </property>
+  <widget class="QLabel" name="lbl">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>281</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(238, 238, 238);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbtn">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>110</y>
+     <width>84</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    background-color: transparent;
+	color:rgb(238, 238, 238);
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(85,170,255);
+}
+
+QPushButton:pressed {
+    background-color: rgb(85,170,255);
+	color:black;
+}
+
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+QPushButton:default {
+    border-color: navy; /* make the default button prominent */
+}</string>
+   </property>
+   <property name="text">
+    <string>Aceptar</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>301</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    background-color: transparent;
+    border: 2px solid;
+	border-color:rgb(85,170,255);
+    border-radius: 10px;
+    margin-top: 1ex; /* leave space at the top for the title */
+	font-size: 12px;
+    font-weight: bold;
+}
+QGroupBox::title {
+color:rgb(238, 238, 238);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>lbl</zorder>
+  <zorder>pbtn</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

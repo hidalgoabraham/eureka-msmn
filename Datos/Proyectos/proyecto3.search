@@ -1,0 +1,28 @@
+0.03,400.0,2400.0
+Nelder-Mead,Brute Force,Virus Colony Search
+2200.0,2600.0
+
+Voltaje,2
+12.0,1800.0
+12.0,3000.0
+1800.0,3000.0
+
+Modelo,3
+R
+200.0
+0.0,inf
+
+Sin pérdidas
+Constante dieléctrica relativa,2.0
+50.0,2.3
+10,10
+0,inf
+
+Paralelo,Corto circuito,5,5,Cantidad máxima de stubs:,7
+
+Modelo,5
+L-s-(R-p-C)
+68.192
+2.0
+0.587
+0.0,inf

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>376</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>592</width>
+    <height>376</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>592</width>
+    <height>376</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Rendimiento computacional</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>minilogo.ico</normaloff>minilogo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-color: rgb(49, 58, 67);</string>
+  </property>
+  <widget class="QLabel" name="lbl_ordenar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>23</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(238, 238, 238);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>Ordenar por:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbtn_ordenar">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>16</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    background-color: transparent;
+	color:rgb(238, 238, 238);
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(85,170,255);
+}
+
+QPushButton:pressed {
+    background-color: rgb(85,170,255);
+	color:black;
+}
+
+QPushButton:flat {
+    border: none; /* no border for a flat push button */
+}
+
+QPushButton:default {
+    border-color: navy; /* make the default button prominent */
+}</string>
+   </property>
+   <property name="text">
+    <string>Menor a mayor ↓</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scllarea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>571</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollBar:vertical {
+   /* border: 2px solid black;*/
+    background: rgb(49, 58, 67);
+    width: 5px;
+    margin: 20px 0 20px 0;
+}
+QScrollBar::handle:vertical {
+    background: rgb(85,170,255);
+    min-height: 10px;
+}
+QScrollBar::add-line:vertical {
+    border: 1px black;
+    background: black;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: 1px black;
+    background: black;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-page:vertical {
+    background: rgb(79, 93, 108);
+}
+
+QScrollBar::add-page:vertical {
+    background: rgb(79, 93, 108);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>571</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <layout class="QGridLayout" name="layout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item row="0" column="1">
+      <widget class="QLabel" name="lbl_cpu">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(238, 238, 238);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+
+border: 2px solid;
+border-color:rgb(85,170,255);
+border-radius: 10px;
+padding-left: 5px;
+padding-right: 5px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>Uso de CPU
+(%)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <property name="indent">
+        <number>4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="lbl_tiempo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(238, 238, 238);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+
+border: 2px solid;
+border-color:rgb(85,170,255);
+border-radius: 10px;
+padding-left: 5px;
+padding-right: 5px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>Tiempo de
+búsqueda (s)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <property name="indent">
+        <number>4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="lbl_ram">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Memoria RAM empleada.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+color:rgb(238, 238, 238);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+border: 2px solid;
+border-color:rgb(85,170,255);
+border-radius: 10px;
+padding-left: 5px;
+padding-right: 5px;
+}
+QToolTip{ 
+background-color: rgb(79, 93, 108); 
+color: rgb(238, 238, 238); 
+border: black solid 2px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>Memoria máxima
+utilizada (MiB)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="margin">
+        <number>4</number>
+       </property>
+       <property name="indent">
+        <number>4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lbl_algoritmo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(238, 238, 238);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+
+border: 2px solid;
+border-color:rgb(85,170,255);
+border-radius: 10px;
+padding-left: 5px;
+padding-right: 5px;
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>Algoritmo</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="cbx_ordenar">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>181</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border:1px solid rgb(0, 0, 0);
+   	border-radius: 10px;
+	color:rgb(238, 238, 238);
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(49, 58, 67);
+    padding-left: 6px;
+}
+
+QComboBox:hover{
+	border: 1px solid rgb(85,170,255);
+}
+
+QComboBox:focus{
+	border: 1px solid rgb(85,170,255);
+}
+
+QComboBox::drop-down {    
+    border-left-width: 0px;
+    border-left-color: black;
+    border-left-style: solid; 
+	width:0px;
+}
+
+QComboBox QAbstractItemView {
+    selection-background-color: rgb(85,170,255);
+	selection-color: black;
+	color: rgb(238, 238, 238);
+	background-color: rgb(79, 93, 108);
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Uso de CPU</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Memoria máxima utilizada</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tiempo de búsqueda</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
