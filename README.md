@@ -68,8 +68,8 @@ pip install multiprocessing
 ```
 
 ## Contact me
-If you have any questions or want to hire me, please write an email to ahidalgo3@uc.edu.ve or aj.hidalgo2310@gmail.com
+If you have any questions or want to hire me, please write an email to ahidalgo3@uc.edu.ve or aj.hidalgo2310@gmail.com.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/) Public License.
