@@ -13,21 +13,22 @@ App's logo:
 ![App Screenshot](./logo_eureka_msmn.png)
 <br />
 <br />
-
-
+<br />
+<br />
 Main window: Configure the transmission line system and select the heuristic algorithms
 
 ![App Screenshot](./ventana_principal.png)
-
-
-
+<br />
+<br />
+<br />
+<br />
 Graphics: Reflection coefficient vs. frequency
 
 ![App Screenshot](./resultados_disenho.png)
-
-
-
-
+<br />
+<br />
+<br />
+<br />
 Results: ROEV (Voltage Standing Wave Ratio) vs. frequency - A wideband impedance matching network
 
 ![App Screenshot](./calidad_2.png)
