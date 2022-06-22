@@ -69,7 +69,7 @@ pip install multiprocessing
 
 <br />
 
-More details of how to use this software are available in [this file](https://github.com/hidalgoabraham/eureka-msmn/blob/main/Manual%20de%20%20instalaci%C3%B3n%2C%20uso%20y%20actualizaci%C3%B3n%20-%20Abraham%20Hidalgo.pdf)
+More details of how to use this software are available in [this file](https://github.com/hidalgoabraham/eureka-msmn/blob/main/Manual%20de%20%20instalaci%C3%B3n%2C%20uso%20y%20actualizaci%C3%B3n%20-%20Abraham%20Hidalgo.pdf).
 
 ## Contact me
 If you have any questions or want to hire me, please write an email to ahidalgo3@uc.edu.ve or aj.hidalgo2310@gmail.com.
