@@ -1,6 +1,8 @@
 ## Description
 This is a tool to automatic design Multiple-Stub Matching Networks (MSMN) for wideband on Transmission Lines, using Metaheuristics Optimization Algorithms.
 
+Scientific publication about this software: [DOI](https://doi.org/10.54139/revinguc.v29i2.171)
+
 ## Author
 **Abraham Hidalgo**
 * [LinkedIn](https://www.linkedin.com/in/hidalgoabraham/)
