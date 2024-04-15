@@ -1,3 +1,9 @@
+## ⬇️ Download executable for Microsoft Windows OS
+You can run the "Eureka MSMN.exe" file included in the package folder available on [this link](https://drive.google.com/file/d/1QnXycnOk792U68OeCCPjIsB6TgkOxBgr/view?usp=sharing).
+
+## 📖 Installation, use and update manual
+More details of how to use this software are available in [this file](https://github.com/hidalgoabraham/eureka-msmn/blob/main/manual.pdf).
+
 ## Description
 This is a tool to automatic design Multiple-Stub Matching Networks (MSMN) for wideband on Transmission Lines, using Metaheuristics Optimization Algorithms.
 
